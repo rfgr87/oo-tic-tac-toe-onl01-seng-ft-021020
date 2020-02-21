@@ -87,16 +87,16 @@ class TicTacToe
   def won?
     @out = []
     WIN_COMBINATIONS.any? do |x|
-      binding.pry
       if @board[x[0]] != " " && @board[x[0]] == @board[x[1]] && @board[x[0]] == @board[x[2]]
-       @out = [x[0], x[1], x[2]]
+       #@out = [x[0], x[1], x[2]]
+       return x 
       end
     end
-    if @out.length == 3
-      @out
-    else
-      false
-    end
+    # if @out.length == 3
+    #   @out
+    # else
+    #   false
+    # end
   end
     
   def full?
