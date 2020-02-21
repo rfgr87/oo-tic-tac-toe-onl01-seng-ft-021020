@@ -102,6 +102,10 @@ class TicTacToe
   end
     
   def full?
+    @board.all? do |x| 
+      x != " " 
+    end
+    
     # if turn_count == 9 
     #   true
     # else
@@ -122,11 +126,11 @@ class TicTacToe
   end
     
   def over?
-    if !won? == false || full?
-      true
-    elsif !won? && !full?
-      false
-    end
+    # if !won? == false || full?
+    #   true
+    # elsif !won? && !full?
+    #   false
+    # end
   end
   
   def winner
