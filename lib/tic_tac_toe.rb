@@ -102,11 +102,11 @@ class TicTacToe
   end
     
   def full?
-    if turn_count == 9 
-      true
-    else
-      false
-    end
+    # if turn_count == 9 
+    #   true
+    # else
+    #   false
+    # end
   end
   
   def draw?
