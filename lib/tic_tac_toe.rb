@@ -71,14 +71,14 @@ class TicTacToe
   
   def turn
     puts "Specify a position between 1-9"
-    @user = gets.chomp
-    @index_move = input_to_index(@user)
-    if valid_move?(@index_move)
-      move(@index_move, current_player)
+    user = gets.chomp
+    index_move = input_to_index(user)
+    if valid_move?(index_move)
+      move(index_move, current_player)
       display_board
     else
       puts "Invalid move. Please select another position from 1-9"
-      @user = gets.chomp
+      turn
     end
   end
         
