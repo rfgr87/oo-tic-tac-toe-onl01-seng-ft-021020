@@ -79,11 +79,11 @@ class TicTacToe
     index_move = input_to_index(user)
     if valid_move?(index_move)
       move(index_move, current_player)
-      display_board
     else
       puts "Invalid move. Please select another position from 1-9"
       turn
     end
+    display_board
   end
         
   def won?
