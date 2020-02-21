@@ -1,3 +1,5 @@
+require "pry"
+
 class TicTacToe
   
     WIN_COMBINATIONS = [
@@ -85,6 +87,7 @@ class TicTacToe
   def won?
     @out = []
     WIN_COMBINATIONS.collect do |x|
+      binding.pry
       if @board[x[0]] != " " && @board[x[0]] == @board[x[1]] && @board[x[0]] == @board[x[2]]
        @out = [x[0], x[1], x[2]]
       end
