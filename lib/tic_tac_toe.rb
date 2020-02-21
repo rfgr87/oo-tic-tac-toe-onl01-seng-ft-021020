@@ -110,11 +110,13 @@ class TicTacToe
   def draw?
     if !won? && full?
       return true
-    elsif !won? && !full?
-      return false
-    elsif won?.all?{|x| x.is_a? Integer}
-      return false
     end
+    
+    # elsif !won? && !full?
+    #   return false
+    # elsif won?.all?{|x| x.is_a? Integer}
+    #   return false
+    # end
   end
     
   def over?
